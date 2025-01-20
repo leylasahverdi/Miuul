@@ -123,8 +123,5 @@ diff_func(kume1,kume2)
 
 
 
-lst = ["D", "A", "T", "A", "S", "C", "I", "E", "N", "C", "E"]
-lst + ['N']
-
 
 
