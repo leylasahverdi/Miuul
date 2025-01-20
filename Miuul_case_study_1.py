@@ -85,12 +85,14 @@ even_list, odd_list = func(l)
 # Write the students' grades by faculty by using the enumerate function.
 
 students = ["Ali", "Veli", "Ayşe", "Talat", "Zeynep", "Ece"]
-
+a=1
 for i, k in enumerate(students, start=1):
     if i<4:
         print(f"Mühendislik fakültesi {i}. öğrenci: {k}")
     else:
-        print(f"Tıp fakültesi {i}. öğrenci: {k}")
+        print(f"Tıp fakültesi {a}. öğrenci: {k}")
+        a=a+1
+
 
 
 
@@ -121,6 +123,8 @@ diff_func(kume1,kume2)
 
 
 
+lst = ["D", "A", "T", "A", "S", "C", "I", "E", "N", "C", "E"]
+lst + ['N']
 
 
 

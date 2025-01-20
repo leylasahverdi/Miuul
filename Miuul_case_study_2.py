@@ -4,7 +4,7 @@ import seaborn as sns
 df = sns.load_dataset("car_crashes")
 df.columns
 
-disp=['NUM_'+ i.upper() for i in df.columns]
+disp=['NUM_'+ i.upper() if df[i].dtype != 'object' else i.upper() for i in df.columns ]
 
 # 2. Using the List Comprehension structure, write “FLAG” at the end of the names of the variables that do not contain “no” in their name in the car_crashes database.
 
