@@ -1,4 +1,4 @@
-# All questions asked by ChatGPT, and the answers were answered by me
+# All questions asked by ChatGPT and Kuzey Calışkan, and the answers were answered by me
 #1. Write a function:
 # check_divisibility(num, divisors), which checks if a number is divisible by all the numbers in a given list.
 #
@@ -34,5 +34,16 @@ def modify_list(lst):
 
 modify_list([1, 2, 3, 4, 5])
 #3.
-#
+# Write a function that returns the maximum difference between the previous number in an array of numbers.
 
+examp=[2, 4, 5, 1, 9, 15, 3, 4, 5]
+from functools import reduce
+def funcm(liste56):
+    absol=[]
+    for i, k in enumerate(liste56, start=1):
+        if i < len(liste56):
+            absol.append(abs(liste56[i-1]-liste56[(i)]))
+    length = len(absol)
+    absol.sort()
+    print(absol[(length-1)])
+funcm(examp)
